@@ -1,0 +1,74 @@
+:root {
+  font-size: 16px;
+}
+
+.logo-rodilla{
+  height: 1.4rem;
+}
+
+
+.box-img-user-nav{
+  width: 2.8rem;
+  height: 2.8rem;
+  border-radius: 50%;
+}
+
+.box-img-cart-nav{
+  width: 2.8rem;
+  height: 2.8rem;
+  background-color: #d3d8d6;
+  border-radius: 50%;
+}
+
+.img-user-nav path{
+  fill:#4f635b;
+
+}
+
+
+.img-cart-nav path{
+  fill:#fff;
+}
+
+.text-nav{
+  font-size:.8rem;
+  color:#928C63;
+}
+
+.text-sub-nav{
+  font-size:0.9rem;
+  color:#928C63;
+  font-weight: bold;
+}
+
+.color-border-nav2{
+  color:#928C63;
+}
+
+.nav-box{
+  background-color: #fff ;
+box-shadow: 
+0 4px 10px 0 rgba(124,120,111,.12);
+}
+
+.box-info{
+  width: 100%;
+  height: 100vh;
+}
+
+.menu-footer{
+  font-size:0.8rem;
+  font-weight: bold;
+  color:#928C63;
+  
+}
+
+.menu-footer svg{
+  fill:#928C63;
+
+}
+
+.box-footer{
+  box-shadow: 0 -4px 10px 0 rgba(124,120,111,.12);
+  background-color: #ffffff;
+}
