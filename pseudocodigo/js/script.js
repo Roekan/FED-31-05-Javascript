@@ -1,3 +1,6 @@
+const prompt = require("prompt-sync")();
+
+
 /*1. Diseñar el pseudocódigo de un programa que sume dos números leídos por pantalla y
 muestre el resultado por terminal.*/
 

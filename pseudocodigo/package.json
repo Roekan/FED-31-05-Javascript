@@ -1,7 +1,7 @@
 {
-  "name": "javascript-vanilla-1",
+  "name": "pseudocodigo",
   "version": "1.0.0",
-  "description": "Ejercicios javascript 1",
+  "description": "Retos javascript",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
