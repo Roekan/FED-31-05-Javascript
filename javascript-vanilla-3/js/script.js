@@ -616,9 +616,75 @@ ejemplo, dada la palabra “javascript” y la letra “a”, debería devolver 
 /*9. Crea una función que, dado un array de números, devuelva el número más grande del
 mismo.*/
 
+// const mayorDeArray = (arrayN) =>{
+
+// let mayor=0;
+
+//     for(let i=0;i<arrayN.length;i++){
+//         if(arrayN[i]>mayor){
+//             mayor = arrayN[i];
+//         }
+//     }
+//     return mayor;
+// }
+
+
+
+// let cantArray= Number(prompt('Introduzca la cantidad de elementos que quiere en el array:   '))
+// let arrayNumeros=[];
+// let numero;
+
+
+// for(let i=0;i<cantArray;i++){
+//     numero = Number(prompt(`Introduzca un numero ${i+1}:   `));
+//     arrayNumeros.push(numero);
+// }
+
+// console.log(mayorDeArray(arrayNumeros));
+
+
+
 
 /*10. Crea una función que, dado un array de números, devuelva la suma de todos los
 números que contiene.*/
+
+// const sumaDeArray = (arrayN) =>{
+
+//     let suma=0;
+    
+//         for(let i=0;i<arrayN.length;i++){
+//             suma+=arrayN[i];
+//         }
+//         return suma;
+//     }
+
+
+
+//     let cantArray= Number(prompt('Introduzca la cantidad de elementos que quiere en el array:   '))
+//     let arrayNumeros=[];
+//     let numero;
+//     for(let i=0;i<cantArray;i++){
+//         numero = Number(prompt(`Introduzca un numero ${i+1}:   `));
+//         arrayNumeros.push(numero);
+//     }
+
+// console.log(sumaDeArray(arrayNumeros))
+
+
 /*11. Crea una función que, dados dos números A y B, obtenga el porcentaje(B) de un
 número(A). */
 
+
+// const calcularPorcentaje=(n,p) =>{
+//     return  (n/100)*p;
+// }
+
+
+
+// let num= Number(prompt('Introduzca un numero:   '))
+// let porcentaje= Number(prompt('Introduzca un porcentaje:   '))
+
+
+
+
+// console.log(calcularPorcentaje(num,porcentaje));
