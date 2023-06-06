@@ -1,5 +1,9 @@
 
 const prompt = require("prompt-sync")();
+/*los parentesis vacios de la linea de arriba instancian el elemento despues de llamarlo */
+
+
+
 
 /*1. Crea una aplicación que nos calcule el área de un círculo, cuadrado o triángulo.
 Pediremos al usuario que figura queremos calcular su área y según lo introducido pedirá los
@@ -11,32 +15,42 @@ Aquí te mostramos que necesita cada figura:
 • Cuadrado: lado * lado*/
 
 
-// let figura=prompt('¿Que figura es? (circulo, cuadrado, triangulo):     ')
 
+// const areaCirculo = () =>{
+//     let radio = Number(prompt('Introduzca radio del circulo:  '))
+//     let area = ((radio * radio)*Math.PI).toFixed(2)
+//     console.log(`El area del Circulo es: ${area}`)
+// } 
+
+// const areaTriangulo = (b,a) =>{
+//     let base = Number(prompt('Introduzca  medida de la base:  '))
+//     let altura = Number(prompt('Introduzca  medida de la altura:  '))
+//     let area = ((base * altura)/2).toFixed(2);
+//     console.log(`El area del Triangulo es: ${area}`)
+// } 
+
+// const areaCuadrado = (r) =>{
+//     let lado = Number(prompt('Introduzca medida del lado:  '))
+//     let area = (lado * lado).toFixed(2);
+//     console.log(`El area del Cuadrado es: ${area}`)
+// } 
+
+// let figura=prompt('¿Que figura es? (circulo, cuadrado, triangulo):     ')
 // let figMinusculas=figura.toLowerCase();
-// let area ='';
 
 
 // switch(figMinusculas){
 //     case 'circulo':
-//         let radio = Number(prompt('Introduzca radio del circulo:  '))
-//         area = ((radio * radio)*Math.PI).toFixed(2);
+//         areaCirculo()
 //         break;
 //     case 'triangulo':
-//         let base = Number(prompt('Introduzca  medida de la base:  '))
-//         let altura = Number(prompt('Introduzca  medida de la altura:  '))
-//         area = ((base * altura)/2).toFixed(2);
+//         areaTriangulo()
 //         break;
 //     case 'cuadrado':
-//         let lado = Number(prompt('Introduzca medida del lado:  '))
-//         area = (lado * lado).toFixed(2);
+//         areaCuadrado()
 //         break;
 //     default:
 //         console.log('No ha introducido una figura válida')
-// }
-
-// if(area !=''){
-//     console.log(`El area del ${figura} es: ${area}`)
 // }
 
 
@@ -418,56 +432,56 @@ indicamos mostrar los números acabados en 5, podría salir 155, 25, etc.
  */
 
 
-let cantidad=0;
-let digito=0;
+// let cantidad=0;
+// let digito=0;
 
-do{
-    cantidad = Number(prompt(`Introduzca cantidad del array:   `));
-}while(cantidad<0);
+// do{
+//     cantidad = Number(prompt(`Introduzca cantidad del array:   `));
+// }while(cantidad<0);
 
-do{
-    digito = Number(prompt(`Introduzca dígito de 0 a 9:   `));
+// do{
+//     digito = Number(prompt(`Introduzca dígito de 0 a 9:   `));
 
-}while(digito<0 || digito>9);
+// }while(digito<0 || digito>9);
 
 
 
-let arrayOriginal = [];
-let arrayDigitos = [];
+// let arrayOriginal = [];
+// let arrayDigitos = [];
 
-const rellenarArrayOriginal=(cant,arr)=>{
-    for(let i=0;i<cant;i++){
-        arr[i]=Math.round(Math.random()*(100-1)+1);
-    }
-    return arr;
-}
-
-// const rellenarArrayDig=(arr,arrDig,dig)=>{
-
-//     // for(let i=0;i<arr.length;i++){
-//     //     if(arr[i]%10==dig){
-//     //         arrDig[i]=arr[i]
-//     //     }
-//     // }
-//     arr.forEach(num =>{
-//         if(num%10==dig){
-//         arrDig.push(num);
+// const rellenarArrayOriginal=(cant,arr)=>{
+//     for(let i=0;i<cant;i++){
+//         arr[i]=Math.round(Math.random()*(100-1)+1);
 //     }
-//     })
-//     return arrDig;
+//     return arr;
 // }
 
+// // const rellenarArrayDig=(arr,arrDig,dig)=>{
+
+// //     // for(let i=0;i<arr.length;i++){
+// //     //     if(arr[i]%10==dig){
+// //     //         arrDig[i]=arr[i]
+// //     //     }
+// //     // }
+// //     arr.forEach(num =>{
+// //         if(num%10==dig){
+// //         arrDig.push(num);
+// //     }
+// //     })
+// //     return arrDig;
+// // }
 
 
-rellenarArrayOriginal(cantidad,arrayOriginal)
 
-//arrayDigitos=rellenarArrayDig(arrayOriginal, arrayDigitos, digito);
+// rellenarArrayOriginal(cantidad,arrayOriginal)
 
-arrayDigitos=arrayOriginal.filter(num => num%10==digito )
-//Filtra cuando el elemento es num%10==digito
+// //arrayDigitos=rellenarArrayDig(arrayOriginal, arrayDigitos, digito);
 
-arrayOriginal.forEach((number,i)=>{
-    console.log(`El numero ${i+1} es: ${number}`)
-})
+// arrayDigitos=arrayOriginal.filter(num => num%10==digito )
+// //Filtra cuando el elemento es num%10==digito
 
-console.log(`Los numeros acabados en ${digito} son: ${arrayDigitos.join(", ")}`)
+// arrayOriginal.forEach((number,i)=>{
+//     console.log(`El numero ${i+1} es: ${number}`)
+// })
+
+// console.log(`Los numeros acabados en ${digito} son: ${arrayDigitos.join(", ")}`)
