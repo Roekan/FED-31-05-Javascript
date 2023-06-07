@@ -145,7 +145,7 @@ pantalla.*/
 /*10. Crea un programa en el que el usuario introduzca el número del mes (del 1 al 12) y el
 código responda cuántos días tiene ese mes.*/
 
-// let mes = prompt('Introduzca el mes (del 1 al 12):  ');
+// let mes = parseInt(prompt('Introduzca el mes (del 1 al 12):  '));
 // let dias = 0;
 
 
@@ -155,8 +155,8 @@ código responda cuántos días tiene ese mes.*/
 //     case 5:
 //     case 7:
 //     case 8:
-//     case 9:
-//     case 11:
+//     case 10:
+//     case 12:
 //         dias=31;
 //         break;
 //     case 2:
@@ -211,6 +211,9 @@ por kilómetro ha de ser 0.10, si es “moto” ha de ser 0.20 y si es “autob�
 // let km = Number(prompt('Introduzca los km:  '))
 // let precio = 0;
 // let total = 0;
+
+
+
 
 // if(vehiculo.toLowerCase()=='coche'){
 //     precio = 0.10
