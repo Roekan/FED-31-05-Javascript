@@ -490,23 +490,214 @@ parámetro el objeto y la propiedad en cuestión) */
 
 /*19. Escribe una función que sume todos sus argumentos, independientemente de cuántos sean*/
 
+// let arr = [1,5,2,3,4];
+
+// const sumar = ([...a]) =>{
+//     let suma = 0
+//     for(let i of a){
+//         suma+=i
+//     }
+//     return suma;
 
 
+// }
+
+// console.log(sumar(arr))
 
 
 /*20. Escribe una función que me diga si un alumno está aprobado o no, a la cual puedo pasar
 cualquier cantidad de notas como parámetro*/
+
+
+// let arrayNotasAprobado = [2,3,4,10,10]
+// let arrayNotasSuspenso = [2,3,4,6,0]
+
+// const aprobado = ([...c]) =>{
+//     let sumaNotas=0;
+//     let cont=0;
+
+//     for(let i of c){
+//         sumaNotas+=i;
+//         cont++
+//     }
+
+//     if(sumaNotas/cont>=5){
+//         console.log(`Has aprobado`)
+//     }else{
+//         console.log(`No has aprobado`)
+//     }
+
+
+// }
+
+// aprobado(arrayNotasAprobado)
+// aprobado(arrayNotasSuspenso)
+
+
 /*21. Escribe una función que reciba un array de números como argumento y saque la diferencia
 entre el número más alto y el más bajo del mismo. Utiliza el operador …*/
+
+// let arr = [1,5,2,3,4,9];
+
+
+// const diferencia = ([...a])=>{
+
+//     let max = a[0];
+//     let min = a[0];
+    
+//     for(let i of a){
+
+//         if(i>max){
+//             max = i;
+//         }
+//         if(i<min){
+//             min = i;
+//         }
+
+//     }
+//     return max - min
+
+// }
+
+
+// console.log(`La diferencia es: ${diferencia(arr)}`)
+
+
 /*22. Crea dos arrays de objetos. El primero debe contener los nombres y apellidos de por lo menos
 tres personas. El segundo debe contener otros datos de esas mismas personas, como su dirección
 y su número de teléfono. Utiliza una función para combinar ambos arrays y obtener un array nuevo
 en que cada objeto contiene toda la información de cada persona.*/
+
+//                             let personas= [ 
+//                                 {
+//                                     'nombre': 'Peter',
+//                                     'apellido':'Grifin',
+//                                     'edad':40
+//                                 },
+//                                 {
+//                                     'nombre': 'Mario',
+//                                     'apellido':'Bros',
+//                                     'edad':30
+//                                 },
+//                                 {
+//                                     'nombre': 'Stan',
+//                                     'apellido':'Lee',
+//                                     'edad':150
+//                                 },
+//                             ]
+
+//                             let telefonos= [ 
+//                                 {
+//                                     'telefono': 111,
+//                                     'ciudad':'Petertopia',
+//                                 },
+//                                 {
+//                                     'telefono': 222,
+//                                     'ciudad':'Reino champiñon',
+//                                 },
+//                                 {
+//                                     'telefono': 333,
+//                                     'ciudad':'Universo Marvel',
+//                                 },
+
+//                             ]
+
+
+
+// let combinarArraysObjetos = (personas,telefonos)=>{
+// let arrayRes=[]
+
+// for(let [i,persona] of personas.entries()){
+    
+//     const newPersona = 
+//         {
+//             ...persona,
+//             ...telefonos[i]
+//         }
+
+// arrayRes.push(newPersona)
+//     }
+
+//     return arrayRes
+
+
+// }
+
+// let res = combinarArraysObjetos(personas, telefonos);
+// console.log(res)
+
+
+
 /*23. Dado el objeto combinado del ejercicio anterior, crea una función que saque cada uno de los
 objetos excluyendo la edad de la persona. Es decir, debo ver todas las propiedades de cada objeto
 menos la edad. Hazlo utilizando el operador ...*/
+
+                            // let personas= [ 
+                            //     {
+                            //         'nombre': 'Peter',
+                            //         'apellido':'Grifin',
+                            //         'edad':40,
+                            //         'telefono': 111,
+                            //         'ciudad':'Petertopia',
+                            //     },
+                            //     {
+                            //         'nombre': 'Mario',
+                            //         'apellido':'Bros',
+                            //         'edad':30,
+                            //         'telefono': 222,
+                            //         'ciudad':'Reino champiñon',
+                            //     },
+                            //     {
+                            //         'nombre': 'Stan',
+                            //         'apellido':'Lee',
+                            //         'edad':150,
+                            //         'telefono': 333,
+                            //         'ciudad':'Universo Marvel',
+                            //     },
+                                            // ]
+
+
+
+                            // const quitarEdad = ()=>{
+
+                            // let arraySinEdad =[]
+
+                            //     for (let i=0;i<personas.length;i++){
+                            //         arraySinEdad.push(personas[i].nombre)
+                            //         arraySinEdad.push(personas[i].apellido)
+                            //         arraySinEdad.push(personas[i].telefono)
+                            //         arraySinEdad.push(personas[i].ciudad)
+
+                            //     }
+                            //     return arraySinEdad
+
+                            // }
+
+                            // console.log(quitarEdad(personas))
+
+
 /*24. Dado el array de nombres ["mara", "pAblo", "juan", "MARCOS"], devuelve otro en que la
 primera letra de cada uno sea mayúscula y el resto minúsculas*/
+
+// let array=["mara", "pAblo", "juan", "MARCOS"];
+// const escribirBien = (arr)=>{
+// let nuevoArray=[]
+
+//     for(let nombre of arr){
+//         nuevoArray.push(nombre.charAt(0).toUpperCase() + nombre.slice(1).toLowerCase())
+//     }
+
+// return nuevoArray
+// }
+
+
+
+
+
+// console.log(escribirBien(array))
+
+
+
 /*25. Crea un array con únicamente los nombres de los siguientes objetos
 let personas = [
  { nombre: "Mara", edad: 30 },
@@ -516,8 +707,73 @@ let personas = [
  { nombre: "Rodrigo", edad: 31 },
 ];
 Además, saca un array únicamente con los nombres de los mayores de 30*/
+
+// let personas = [
+//     { nombre: "Mara", edad: 30 },
+//     { nombre: "Pablo", edad: 35 },
+//     { nombre: "Juan", edad: 26 },
+//     { nombre: "Marta", edad: 56 },
+//     { nombre: "Rodrigo", edad: 31 },
+//    ]
+
+
+// let arrayNombre =[]
+// let arrayMayor30=[]
+
+// for (let i=0;i<personas.length;i++){
+//     arrayNombre.push(personas[i].nombre)
+
+//     if(personas[i].edad>30){
+//         arrayMayor30.push(personas[i])
+//     }
+
+// }
+
+
+
+
+
+// console.log(arrayNombre)
+// console.log(arrayMayor30)
+
+
 /*26. Dado un array de números, crea una función que sume solo los pares*/
+
+// let numeros = [8,4,57,49,53,22,15,2] //Sumapares = 36
+
+// const sumaPares=(n)=>{
+//     let suma = 0;
+
+//     for(let num of n){
+//         if(num%2===0){
+//             suma+=num;
+//         }
+//     }
+
+// return suma;
+
+// }
+
+// console.log(sumaPares(numeros))
+
 /*27. Dado un nombre completo (en string), obtén sus iniciales y sácalas también en una string*/
+
+
+// let nombreCompleto = 'Álvaro Fernández Arribas'
+
+// let palabras = []
+// let letras = []
+// let arrayRes=[]
+// palabras=nombreCompleto.split(" ")
+
+// palabras.forEach(element => {
+//     letras.push(element[0])
+// });
+// console.log(letras)
+
+
+
+
 /*28. Saca únicamente los nombres de los estudiantes que tengan una media por encima de 9
 let estudiantes = [
  { nombre: 'Mara', notas: [10, 7, 8, 8, 9] },
@@ -525,3 +781,24 @@ let estudiantes = [
  { nombre: 'Marcos', notas: [3, 5, 2, 8, 5] },
  { nombre: 'Pablo', notas: [10, 10, 9, 8, 9] },
 ];*/
+
+let estudiantes = [
+    { nombre: 'Mara', notas: [10, 7, 8, 8, 9] },
+    { nombre: 'David', notas: [6, 2, 5, 10, 7] },
+    { nombre: 'Marcos', notas: [3, 5, 2, 8, 5] },
+    { nombre: 'Pablo', notas: [10, 10, 9, 8, 9] },
+   ];
+
+
+estudiantes.map(alumno=>{
+
+/*const medianotas = suma de notas (con reduce()) / alumno.notas.length (5) */
+const mediaNotas = alumno.notas.reduce(
+    (acumulador,nota)=>{
+      return  acumulador+nota;
+    }
+)/alumno.notas.length
+
+console.log(mediaNotas)
+
+})
